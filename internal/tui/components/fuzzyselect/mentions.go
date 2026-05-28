@@ -61,6 +61,11 @@ func (src *UserMentionSource) ExtractContext(input string, cursorPos tea.Positio
 		}
 	}
 
+	// Guard against userStart > userEnd (e.g. "@" at end of input)
+	if userStart > userEnd {
+		return Context{}
+	}
+
 	return Context{
 		Start:   tea.Position{X: userStart, Y: cursorPos.Y},
 		End:     tea.Position{X: userEnd, Y: cursorPos.Y},
