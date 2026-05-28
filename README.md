@@ -116,3 +116,19 @@ See the contribution guide at [https://www.gh-dash.dev/contributing](https://www
 ## Authors
 
 Dolev Hadar ([@dlvhdr](https://github.com/dlvhdr)) and the [community](https://github.com/dlvhdr/gh-dash/graphs/contributors).
+
+## ⌨️ Keybinding Configuration
+
+Customize your keyboard shortcuts in `~/.config/gh-dash/config.yml`:
+
+```yaml
+keybindings:
+  universal:
+    - key: "g"
+      builtin: "gh dashboard"
+  prs:
+    - key: "c"
+      builtin: "pr checkout"
+```
+
+Run `gh dash --help` to see all available built-in commands and default keybindings.
