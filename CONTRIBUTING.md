@@ -119,3 +119,6 @@ task lint:fix
 - Run the docs site by running `task docs`
 
 * Go to `localhost:4321` to view them
+
+<!-- Thanks for contributing! -->
+
